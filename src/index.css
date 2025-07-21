@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  height: 100hv;
+  background-color: #161513;
+  color: white;
+  overflow-x: hidden;
+  
+  font-family: 'poppins',sans-serif;
+}
+.a{
+  font-weight: 400 !important;
+  font-family: 'poppins',sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'poppins',sans-serif;
+}
+
+p,li,a,button{
+ font-family: 'poppins',sans-serif;
+}
+
+.main-title1{
+  font-weight: 700;
+  font-size: 58px;
+  color: #F05F22;
+}
+
+
+.main-title2{
+
+  font-size: 35px;
+  font-weight: 600;
+  color: #F05F22;
+}
+
+.section-title-black{
+   font-family: 'poppins',sans-serif;
+  font-size: 25px;
+  font-weight: 0;
+  color: #020202;
+}
+
+.section-title-white{
+   font-family: 'poppins',sans-serif;
+  font-size: 25px;
+  font-weight: 0;
+  color: #fbfbfb;
+}
+
+.section-title{
+  font-size: 20px;
+  color: #fff;
+}
+
+.sub-title{
+  font-weight: 600;
+font-size: 20px;
+color: #2B2A60;
+}
+.para-section{
+  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2B2A60;
+}
+.para-section1{
+  font-weight: 400;
+  text-align: justify;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .para-section{
+  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2B2A60;
+}
+.para-section1{
+  font-weight: 400;
+  text-align: justify;
+  font-size: 16px;
+  color: #ffffff;
+}
+}

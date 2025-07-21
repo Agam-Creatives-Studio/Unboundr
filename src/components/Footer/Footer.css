@@ -1,0 +1,100 @@
+.footer {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 40px 0;
+}
+
+.footer-col h5 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: #5c5c5c;
+  text-decoration: underline;
+}
+
+.footer-copy {
+  color: #312859;
+}
+
+.footlog {
+  margin-bottom: 15px;
+}
+.footer-contact {
+  padding: 20px;
+}
+
+.contact-item {
+  color: black;
+  margin-bottom: 8px;
+}
+
+.footer-social {
+  margin-top: 15px;
+}
+
+.follow-label {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.social-icon {
+  margin-right: 12px;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  color: #0073b100; /* LinkedIn blue or change for specific icons */
+}
+.col-md-3 > div {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.col-md-3 > div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+.social-links{
+  padding: 1px !important;
+    background-color: #ffffff00;
+    border-radius: 1px;
+    text-align: left !important;
+    transition: box-shadow 0.3s ease
+}
+
+.footer-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+
+  text-decoration: underline ;
+  text-decoration-color: #000000;
+  text-underline-offset: 3px;
+}
+
+.footer-col li{
+  text-indent: none;
+}

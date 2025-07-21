@@ -1,0 +1,238 @@
+.about-section {
+    /* padding: 50px 20px; */
+    margin-bottom: 0px;
+    height: 70vh;
+    display: flex
+;
+    text-align: center;
+    background-image: url('../../assets/about/4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.about {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.aboutimg,
+.pic {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.text h5 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #F05F22;
+}
+
+.text p {
+  color: #333;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+
+
+
+/* Media Queries */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .carousel-btn.primary {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+.mission-vision-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.container-mv {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.mv-box {
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  flex: 1 1 45%;
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.mv-box:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.main-title2 {
+  
+    font-size: 35px;
+    font-weight: 600;
+    color: #F05F22;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .mv-box {
+    flex: 1 1 100%;
+  }
+
+  .mv-box h2 {
+    font-size: 24px;
+  }
+
+  .mv-box p {
+    font-size: 16px;
+  }
+}
+
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .text h5 {
+    font-size: 20px;
+  }
+
+  .text p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .carousel-btn.primary {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .aboutimg {
+    max-width: 100%;
+  }
+}
+
+.founder-section {
+  background-color: #ffffff00;
+  padding: 0px 20px;
+}
+
+
+.founder-image {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.founder-image img {
+  width: 215px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20%;
+  border: 5px solid #6c6c6c;
+}
+
+.founder-info {
+  flex: 2;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile view (480px and down) */
+@media screen and (max-width: 480px) {
+  .aboutimg,
+  .pic,
+  .text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .hire {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+
+
