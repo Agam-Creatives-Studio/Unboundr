@@ -10,7 +10,7 @@ const faqs = [
   {
     question: 'What kind of programs does Unboundr offer?',
     answer:
-      'We run programs that help students get job-ready, help startup founders become better leaders, and help company teams work better together — all through playful, hands-on learning.',
+      'We run programs that help students get job-ready, help startup founders become better leaders, and help corporates teams work better together — all through playful, hands-on learning.',
   },
   {
     question: 'Who are these programs for?',
@@ -20,7 +20,7 @@ const faqs = [
   {
     question: 'Where is Unboundr based?',
     answer:
-      'Unboundr is based in India. We offer training both online and in person in cities like Chennai, Bangalore, and Pondicherry.',
+      'Unboundr is based in India. We offer training both online and in person in cities like Chennai, Bangalore, and Pondicherry, as well as across the rest of India',
   },
   {
     question: 'What makes Unboundr different?',
@@ -45,7 +45,7 @@ const FAQ = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: false }}
       >
-        FAQs
+        Frequently Asked Questions
       </motion.h2>
 
       {faqs.map((faq, index) => (

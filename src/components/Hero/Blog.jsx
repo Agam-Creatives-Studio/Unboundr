@@ -8,15 +8,19 @@ function Blog() {
         <div className="content-container">
           <div className="front-blog-top">
             <h2 className="front-blog-title dec-title">
-              <span><i className="bi bi-journal-text"></i></span> Latest Posts
+              <span>
+                <i className="bi bi-journal-text"></i>
+              </span>{' '}
+              Latest Posts
             </h2>
             <a className="btn-Fx" href="#">
-              <span>View Blog <i className="bi bi-arrow-right"></i></span>
+              <span>
+                View Blog <i className="bi bi-arrow-right"></i>
+              </span>
             </a>
           </div>
 
           <div className="front-blog-list">
-
             {/* Blog Post 1 */}
             <a className="front-blog-item article-blog" href="#">
               <div
@@ -28,10 +32,13 @@ function Blog() {
                 }}
               ></div>
               <div className="front-blog-item-content article__body">
-                <h3 className="article__title">Is CDN Solutions Still Relevant?</h3>
+                <h3 className="article__title">
+                  Is CDN Solutions Still Relevant?
+                </h3>
                 <div className="article__excerpt">
                   <p>
-                    In the fast-paced world of web development, performance is everything...
+                    In the fast-paced world of web development, performance is
+                    everything...
                   </p>
                 </div>
                 <footer className="article__footer">
@@ -57,10 +64,13 @@ function Blog() {
                 }}
               ></div>
               <div className="front-blog-item-content article__body">
-                <h3 className="article__title">10 Best Web Development Stacks</h3>
+                <h3 className="article__title">
+                  10 Best Web Development Stacks
+                </h3>
                 <div className="article__excerpt">
                   <p>
-                    Choosing the right web development stack is like picking ingredients for your signature dish...
+                    Choosing the right web development stack is like picking
+                    ingredients for your signature dish...
                   </p>
                 </div>
                 <footer className="article__footer">
@@ -86,10 +96,13 @@ function Blog() {
                 }}
               ></div>
               <div className="front-blog-item-content article__body">
-                <h3 className="article__title">Laravel &gt; GitHub &gt; Hostinger</h3>
+                <h3 className="article__title">
+                  Laravel &gt; GitHub &gt; Hostinger
+                </h3>
                 <div className="article__excerpt">
                   <p>
-                    Setting up a Laravel environment, using GitHub, and deploying with Hostinger...
+                    Setting up a Laravel environment, using GitHub, and
+                    deploying with Hostinger...
                   </p>
                 </div>
                 <footer className="article__footer">
@@ -103,25 +116,27 @@ function Blog() {
                 </footer>
               </div>
             </a>
-
           </div>
         </div>
       </section>
-
 
       <section className="front-blog">
         <div className="content-container">
           <div className="front-blog-top">
             <h2 className="front-blog-title dec-title">
-              <span><i className="bi bi-journal-text"></i></span> Latest Posts
+              <span>
+                <i className="bi bi-journal-text"></i>
+              </span>{' '}
+              Latest Posts
             </h2>
             <a className="btn-Fx" href="#">
-              <span>View Blog <i className="bi bi-arrow-right"></i></span>
+              <span>
+                View Blog <i className="bi bi-arrow-right"></i>
+              </span>
             </a>
           </div>
 
           <div className="front-blog-list">
-
             {/* Blog Post 1 */}
             <a className="front-blog-item article-blog" href="#">
               <div
@@ -133,10 +148,13 @@ function Blog() {
                 }}
               ></div>
               <div className="front-blog-item-content article__body">
-                <h3 className="article__title">Is CDN Solutions Still Relevant?</h3>
+                <h3 className="article__title">
+                  Is CDN Solutions Still Relevant?
+                </h3>
                 <div className="article__excerpt">
                   <p>
-                    In the fast-paced world of web development, performance is everything...
+                    In the fast-paced world of web development, performance is
+                    everything...
                   </p>
                 </div>
                 <footer className="article__footer">
@@ -162,10 +180,13 @@ function Blog() {
                 }}
               ></div>
               <div className="front-blog-item-content article__body">
-                <h3 className="article__title">10 Best Web Development Stacks</h3>
+                <h3 className="article__title">
+                  10 Best Web Development Stacks
+                </h3>
                 <div className="article__excerpt">
                   <p>
-                    Choosing the right web development stack is like picking ingredients for your signature dish...
+                    Choosing the right web development stack is like picking
+                    ingredients for your signature dish...
                   </p>
                 </div>
                 <footer className="article__footer">
@@ -191,10 +212,13 @@ function Blog() {
                 }}
               ></div>
               <div className="front-blog-item-content article__body">
-                <h3 className="article__title">Laravel &gt; GitHub &gt; Hostinger</h3>
+                <h3 className="article__title">
+                  Laravel &gt; GitHub &gt; Hostinger
+                </h3>
                 <div className="article__excerpt">
                   <p>
-                    Setting up a Laravel environment, using GitHub, and deploying with Hostinger...
+                    Setting up a Laravel environment, using GitHub, and
+                    deploying with Hostinger...
                   </p>
                 </div>
                 <footer className="article__footer">
@@ -208,7 +232,6 @@ function Blog() {
                 </footer>
               </div>
             </a>
-
           </div>
         </div>
       </section>
