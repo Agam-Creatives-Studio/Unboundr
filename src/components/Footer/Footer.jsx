@@ -79,7 +79,7 @@ I'm interested to know more about Unboundr Programs. Thank you!"
           </p>
 
           <p className="contact-item d-flex">
-            <i class="fa fa-map-marker-alt fs-5"></i><p className='ms-2'> Chennai, Tamil Nadu, India</p> </p>
+            <i className="fa fa-map-marker-alt fs-5"></i><p className='ms-2'> Chennai, Tamil Nadu, India</p> </p>
 
 
         </Col>

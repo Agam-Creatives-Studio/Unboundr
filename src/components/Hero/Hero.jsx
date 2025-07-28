@@ -1,74 +1,67 @@
-import Carousel from "react-bootstrap/Carousel";
-import Logo from "../../assets/UnboundrLogo.png";
-import Founder from "../../assets/home_1.jpg";
-import rock from "../../assets/rocket-lunch.png";
-import rock_w from "../../assets/rocket-white.png";
-import teach from "../../assets/teachings.png";
-import online from "../../assets/video-call.png";
-import game from "../../assets/gamet.png";
-import flex from "../../assets/flexibility.png";
+import Carousel from 'react-bootstrap/Carousel';
+import Logo from '../../assets/UnboundrLogo.png';
+import Founder from '../../assets/home_1.jpg';
+import rock from '../../assets/rocket-lunch.png';
+import rock_w from '../../assets/rocket-white.png';
+import teach from '../../assets/teachings.png';
+import online from '../../assets/video-call.png';
+import game from '../../assets/gamet.png';
+import flex from '../../assets/flexibility.png';
 
-import "./Hero.css";
-import homeData from "../../Data/Home-data";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import program_1 from "../../assets/ice.jpeg";
-import comp from "../../assets/OBT_(1).jpg";
-import clg from "../../assets/6.jpeg";
-import About from "../../assets/Unboundr_Hero_image.jpg";
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import './Hero.css';
+import homeData from '../../Data/Home-data';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import program_1 from '../../assets/ice.jpeg';
+import comp from '../../assets/OBT_(1).jpg';
+import clg from '../../assets/6.jpeg';
+import About from '../../assets/Unboundr_Hero_image.jpg';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import carousel1 from "../../assets/home/1.jpg";
-import carousel2 from "../../assets/home/2.jpg";
-import carousel3 from "../../assets/home/3.jpg";
-import carousel4 from "../../assets/home/4.jpg";
-import carousel5 from "../../assets/home/5.jpg";
-import carousel6 from "../../assets/ezhilmaran-galleryimg1.jpg";
-import carousel7 from "../../assets/ezhilmaran-galleryimg2.jpg";
-import carousel8 from "../../assets/ezhilmaran-galleryimg8.jpg";
-import carousel9 from "../../assets/ezhilmaran-galleryimg7.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import { motion } from "framer-motion";
-import GeneralEnquiryForm from "./Components/GeneralEnquiryForm";
-import AboutGallery from "./Components/AboutGallery";
-import FAQ from "./Components/FAQ";
+
+import { motion } from 'framer-motion';
+import GeneralEnquiryForm from './Components/GeneralEnquiryForm';
+import AboutGallery from './Components/AboutGallery';
+import FAQ from './Components/FAQ';
+import CustomCarousel from './Components/CustomCarousel';
 
 function ControlledCarousel() {
-  useEffect(() => {
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-    window.scrollTo(0, 0);
-  }, []);
+   useEffect(() => {
+     document.documentElement.scrollTop = 0;
+     document.body.scrollTop = 0;
+     window.scrollTo(0, 0);
+   }, []);
 
   //seo tags START
   useEffect(() => {
     document.title =
-      "Unboundr | Gamified Corporate Training & Experiential Learning";
+      'Unboundr | Gamified Corporate Training & Experiential Learning';
 
     const metaDescription = document.querySelector("meta[name='description']");
 
     if (metaDescription) {
       metaDescription.content =
-        "Drive results through experiential learning, corporate training, and gamified coaching for teams, founders, and students. Training that transforms.";
+        'Drive results through experiential learning, corporate training, and gamified coaching for teams, founders, and students. Training that transforms.';
     } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
+      const meta = document.createElement('meta');
+      meta.name = 'description';
       meta.content =
-        "Drive results through experiential learning, corporate training, and gamified coaching for teams, founders, and students. Training that transforms.";
+        'Drive results through experiential learning, corporate training, and gamified coaching for teams, founders, and students. Training that transforms.';
       document.head.appendChild(meta);
     }
 
     const canonical = document.querySelector("link[rel='canonical']");
     if (canonical) {
-      canonical.href = "https://unboundr.com/";
+      canonical.href = 'https://unboundr.com/';
     } else {
-      const link = document.createElement("link");
-      link.rel = "canonical";
-      link.href = "https://unboundr.com/";
+      const link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = 'https://unboundr.com/';
       document.head.appendChild(link);
     }
 
@@ -79,41 +72,41 @@ function ControlledCarousel() {
 
   useEffect(() => {
     // Organization schema
-    const orgScript = document.createElement("script");
-    orgScript.type = "application/ld+json";
+    const orgScript = document.createElement('script');
+    orgScript.type = 'application/ld+json';
     orgScript.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Unboundr",
-      url: "https://unboundr.com",
-      logo: "https://unboundr.com/assets/UnboundrLogo-Bp4kQ9OD.png",
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Unboundr',
+      url: 'https://unboundr.com',
+      logo: 'https://unboundr.com/assets/UnboundrLogo-Bp4kQ9OD.png',
       description:
-        "Unboundr offers experiential learning and gamified training programs for students, startup founders, and corporate teams.",
+        'Unboundr offers experiential learning and gamified training programs for students, startup founders, and corporate teams.',
       sameAs: [
-        "https://www.linkedin.com/company/unboundr",
-        "https://www.instagram.com/unboundr_experiential?igsh=MW45N2pmYWw0ODAzZQ%3D%3D&utm_source=qr",
+        'https://www.linkedin.com/company/unboundr',
+        'https://www.instagram.com/unboundr_experiential?igsh=MW45N2pmYWw0ODAzZQ%3D%3D&utm_source=qr',
       ],
       contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+91-93637 00179",
-        contactType: "Customer Service",
-        areaServed: "IN",
-        availableLanguage: "English",
+        '@type': 'ContactPoint',
+        telephone: '+91-93637 00179',
+        contactType: 'Customer Service',
+        areaServed: 'IN',
+        availableLanguage: 'English',
       },
     });
 
     // WebSite schema
-    const siteScript = document.createElement("script");
-    siteScript.type = "application/ld+json";
+    const siteScript = document.createElement('script');
+    siteScript.type = 'application/ld+json';
     siteScript.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: "Unboundr",
-      url: "https://unboundr.com",
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Unboundr',
+      url: 'https://unboundr.com',
       potentialAction: {
-        "@type": "SearchAction",
-        target: "https://unboundr.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string",
+        '@type': 'SearchAction',
+        target: 'https://unboundr.com/?s={search_term_string}',
+        'query-input': 'required name=search_term_string',
       },
     });
 
@@ -147,117 +140,12 @@ function ControlledCarousel() {
     autoplaySpeed: 5000,
     arrows: false,
   };
+
   return (
     <>
-      <div
-        id="carouselExampleIndicators"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="3000"
-        data-bs-pause="false"
-      >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="6"
-            aria-label="Slide 7"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="7"
-            aria-label="Slide 8"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="8"
-            aria-label="Slide 9"
-          ></button>
-        </div>
+    {/* Custome Carousel Section */}
 
-        {/* ✅ Static Caption Outside the Slider */}
-        <div
-          className="custom-caption d-none d-md-block "
-          style={{ zIndex: 10 }}
-        >
-          <h1>Corporate Training That Transforms Through Gamified Learning</h1>
-          <p>
-            Unleashing the untapped power of people through gamified,
-            experiential learning. Because real transformation begins where
-            textbooks end.
-          </p>
-        </div>
-
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={carousel8} className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={carousel6} className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={carousel7} className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={carousel9} className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item ">
-            <img src={carousel3} className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={carousel1} className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={carousel4} className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={carousel5} className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={carousel2} className="d-block w-100" alt="..." />
-          </div>
-        </div>
-      </div>
+    <CustomCarousel/>
 
       {/* section one is completed  */}
 
@@ -269,7 +157,7 @@ function ControlledCarousel() {
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
         >
-          <h2 className="main-title2">Who We Are ?</h2>
+          <h2 className="main-title2">Who We Are </h2>
         </motion.div>
 
         <div className="row align-items-center px-md-0 px-2">
@@ -298,10 +186,10 @@ function ControlledCarousel() {
             viewport={{ once: false }}
           >
             <h2 className="section-title-black">
-              {" "}
+              {' '}
               Gamified Coaching & Corporate Training for Future-Ready Skills
             </h2>
-            <p style={{ textAlign: "justify" }}>
+            <p style={{ textAlign: 'justify' }}>
               Unboundr is a future-skills education company that empowers
               students, young professionals, and corporate teams through
               experiential learning. We offer corporate training and gamified
@@ -318,72 +206,72 @@ function ControlledCarousel() {
               <div className="conten">
                 <div
                   className="pb-1"
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{ display: 'flex', alignItems: 'center' }}
                 >
                   <img
                     src={rock}
                     alt="Unboundr Logo"
                     style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "10px",
+                      width: '20px',
+                      height: '20px',
+                      marginRight: '10px',
                     }}
                   />
                   Gamified Coaching, Experiential Learning – not boring lectures
                 </div>
                 <div
                   className="pb-1"
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{ display: 'flex', alignItems: 'center' }}
                 >
                   <img
                     src={rock}
                     alt="Unboundr Logo"
                     style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "10px",
+                      width: '20px',
+                      height: '20px',
+                      marginRight: '10px',
                     }}
                   />
                   Designed by Certified NLP, Corporate & Outbound Trainers
                 </div>
                 <div
                   className="pb-1"
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{ display: 'flex', alignItems: 'center' }}
                 >
                   <img
                     src={rock}
                     alt="Unboundr Logo"
                     style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "10px",
+                      width: '20px',
+                      height: '20px',
+                      marginRight: '10px',
                     }}
                   />
                   Rooted in Iceberg Competency Framework
                 </div>
                 <div
                   className="pb-1"
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{ display: 'flex', alignItems: 'center' }}
                 >
                   <img
                     src={rock}
                     alt="Unboundr Logo"
                     style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "10px",
+                      width: '20px',
+                      height: '20px',
+                      marginRight: '10px',
                     }}
                   />
                   Customizable for colleges, startups, MSMEs and corporates
                 </div>
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
                   <img
                     src={rock}
                     alt="Unboundr Logo"
                     style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "10px",
+                      width: '20px',
+                      height: '20px',
+                      marginRight: '10px',
                     }}
                   />
                   Delivered onsite, online, or at outbound retreats
@@ -432,7 +320,7 @@ function ControlledCarousel() {
                       src={product.image}
                     />
                     <p className="sub-title">{product.title}</p>
-                    <p style={{ fontWeight: "bold" }} className="title">
+                    <p style={{ fontWeight: 'bold' }} className="title">
                       {product.subtitle}
                     </p>
                     <p className=" text-center">{product.para}</p>
@@ -626,7 +514,7 @@ function ControlledCarousel() {
         </motion.h2>
 
         <motion.p
-          style={{ color: "white" }}
+          style={{ color: 'white' }}
           className="para-section text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -639,24 +527,24 @@ function ControlledCarousel() {
         <div className="programs mt-5">
           {[
             {
-              title: "Traits",
-              items: ["Focus", "Adaptability", "Resilience"],
+              title: 'Traits',
+              items: ['Focus', 'Adaptability', 'Resilience'],
             },
             {
-              title: "Motives",
-              items: ["Growth Mindset", "Ethics", "Empathy"],
+              title: 'Motives',
+              items: ['Growth Mindset', 'Ethics', 'Empathy'],
             },
             {
-              title: "Self-Image",
-              items: ["Presence", "Confidence", "Ownership"],
+              title: 'Self-Image',
+              items: ['Presence', 'Confidence', 'Ownership'],
             },
             {
-              title: "Social Roles",
-              items: ["Collaboration", "Feedback", "Leadership"],
+              title: 'Social Roles',
+              items: ['Collaboration', 'Feedback', 'Leadership'],
             },
             {
-              title: "Skills",
-              items: ["Communication", "Critical Thinking", "Time Management"],
+              title: 'Skills',
+              items: ['Communication', 'Critical Thinking', 'Time Management'],
             },
           ].map((program, index) => (
             <motion.div
@@ -670,9 +558,9 @@ function ControlledCarousel() {
               <p
                 className="section-title-black text-center mt-2"
                 style={{
-                  fontSize: "16px",
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
+                  fontSize: '16px',
+                  fontWeight: 'bold',
+                  textTransform: 'uppercase',
                 }}
               >
                 {program.title}
@@ -689,9 +577,9 @@ function ControlledCarousel() {
               <ul
                 className="para-section"
                 style={{
-                  listStyleType: "none",
+                  listStyleType: 'none',
                   paddingLeft: 0,
-                  textAlign: "center",
+                  textAlign: 'center',
                 }}
               >
                 {program.items.map((item, i) => (
@@ -754,59 +642,59 @@ function ControlledCarousel() {
             <div className="conten">
               <div
                 className="pb-1"
-                style={{ display: "flex", alignItems: "center" }}
+                style={{ display: 'flex', alignItems: 'center' }}
               >
                 <img
                   src={rock}
                   alt="Unboundr Logo"
-                  style={{ width: "20px", height: "20px", marginRight: "10px" }}
+                  style={{ width: '20px', height: '20px', marginRight: '10px' }}
                 />
                 Improve placement-readiness and employability metrics
               </div>
               <div
                 className="pb-1"
-                style={{ display: "flex", alignItems: "center" }}
+                style={{ display: 'flex', alignItems: 'center' }}
               >
                 <img
                   src={rock}
                   alt="Unboundr Logo"
-                  style={{ width: "20px", height: "20px", marginRight: "10px" }}
+                  style={{ width: '20px', height: '20px', marginRight: '10px' }}
                 />
                 Reduce employer dissatisfaction enriching soft skills in
                 graduates
               </div>
               <div
                 className="pb-1"
-                style={{ display: "flex", alignItems: "center" }}
+                style={{ display: 'flex', alignItems: 'center' }}
               >
                 <img
                   src={rock}
                   alt="Unboundr Logo"
-                  style={{ width: "20px", height: "20px", marginRight: "10px" }}
+                  style={{ width: '20px', height: '20px', marginRight: '10px' }}
                 />
                 Develop confident communicators, collaborators, team players and
                 leaders
               </div>
               <div
                 className="pb-1"
-                style={{ display: "flex", alignItems: "center" }}
+                style={{ display: 'flex', alignItems: 'center' }}
               >
                 <img
                   src={rock}
                   alt="Unboundr Logo"
-                  style={{ width: "20px", height: "20px", marginRight: "10px" }}
+                  style={{ width: '20px', height: '20px', marginRight: '10px' }}
                 />
                 Customizable experiential learning programs tailored for diverse
                 student domains
               </div>
               <div
                 className="pb-1"
-                style={{ display: "flex", alignItems: "center" }}
+                style={{ display: 'flex', alignItems: 'center' }}
               >
                 <img
                   src={rock}
                   alt="Unboundr Logo"
-                  style={{ width: "20px", height: "20px", marginRight: "10px" }}
+                  style={{ width: '20px', height: '20px', marginRight: '10px' }}
                 />
                 Scalable modules aligned with real-world industry expectations
               </div>
@@ -854,16 +742,16 @@ function ControlledCarousel() {
               <h2 className="section-title-white">Why Unboundr?</h2>
               <ul
                 className="para-section1"
-                style={{ listStyleType: "none", paddingLeft: 0 }}
+                style={{ listStyleType: 'none', paddingLeft: 0 }}
               >
                 <li className="pb-2">
                   <img
                     src={rock_w}
                     alt="Unboundr Logo"
                     style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "10px",
+                      width: '20px',
+                      height: '20px',
+                      marginRight: '10px',
                     }}
                   />
                   Startups and MSMEs with lean but promising teams
@@ -873,9 +761,9 @@ function ControlledCarousel() {
                     src={rock_w}
                     alt="Unboundr Logo"
                     style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "10px",
+                      width: '20px',
+                      height: '20px',
+                      marginRight: '10px',
                     }}
                   />
                   L&D teams needing fresh, non-theory formats
@@ -885,9 +773,9 @@ function ControlledCarousel() {
                     src={rock_w}
                     alt="Unboundr Logo"
                     style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "10px",
+                      width: '20px',
+                      height: '20px',
+                      marginRight: '10px',
                     }}
                   />
                   CSR teams looking for youth-skilling impact partners
@@ -940,7 +828,7 @@ function ControlledCarousel() {
                 <p className="testimonial-text">“{t.text}”</p>
                 <h4
                   className="testimonial-name para-section1"
-                  style={{ textAlign: "center" }}
+                  style={{ textAlign: 'center' }}
                 >
                   {t.name}
                 </h4>
@@ -955,7 +843,7 @@ function ControlledCarousel() {
         <section className=" col-md-9 mx-auto ">
           <motion.div
             className=""
-            style={{ backgroundColor: "#ffffff00" }}
+            style={{ backgroundColor: '#ffffff00' }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -1008,7 +896,7 @@ function ControlledCarousel() {
 
       <div
         className="about-gallery py-md-5 py-4 "
-        style={{ backgroundColor: "#F9F9F9" }}
+        style={{ backgroundColor: '#F9F9F9' }}
       >
         <motion.h2
           className="main-title2 text-center pb-4"
@@ -1022,15 +910,15 @@ function ControlledCarousel() {
 
         <AboutGallery />
       </div>
-       
+
       <div>
-        <FAQ/>
-      </div> 
-       {/* <!-- Contact Section --> */}
-  
+        <FAQ />
+      </div>
+      {/* <!-- Contact Section --> */}
+
       <div className="program-container">
         <div className=" wrapper py-5 px-3">
-          <h1 style={{ textAlign: "center" }} className="main-title2 pb-4">
+          <h1 style={{ textAlign: 'center' }} className="main-title2 pb-4">
             Ready to unlock real transformation?
           </h1>
 
@@ -1049,16 +937,16 @@ function ControlledCarousel() {
                 start the conversation.
               </p>
               <p>
-                <strong>Email:</strong>{" "}
+                <strong>Email:</strong>{' '}
                 <a className=" footer-link" href="mailto:connect@unboundr.com">
-                  {" "}
+                  {' '}
                   connect@unboundr.com
                 </a>
               </p>
               <p>
-                <strong>Phone / WhatsApp:</strong>{" "}
+                <strong>Phone / WhatsApp:</strong>{' '}
                 <a className=" footer-link" href="tel:+919363700179">
-                  {" "}
+                  {' '}
                   +91 93637 00179
                 </a>
               </p>
@@ -1077,7 +965,7 @@ function ControlledCarousel() {
                 >
                   <i
                     className="fab fa-linkedin fa-lg"
-                    style={{ color: "#0e76a8" }}
+                    style={{ color: '#0e76a8' }}
                   ></i>
                 </a>
 
@@ -1090,7 +978,7 @@ function ControlledCarousel() {
                 >
                   <i
                     className="fab fa-instagram fa-lg"
-                    style={{ color: "#E1306C" }}
+                    style={{ color: '#E1306C' }}
                   ></i>
                 </a>
 
@@ -1103,7 +991,7 @@ function ControlledCarousel() {
                 >
                   <i
                     className="fab fa-whatsapp fa-lg"
-                    style={{ color: "#25D366" }}
+                    style={{ color: '#25D366' }}
                   ></i>
                 </a>
               </div>

@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <BrowserRouter>  {/*   basename='/Unboundr/'*/}
+  <BrowserRouter basename='/Unboundr/'>  {/*   basename='/Unboundr/'*/}
     <App />
    </BrowserRouter>
   </StrictMode>,
